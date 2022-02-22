@@ -95,6 +95,7 @@ form button:hover{
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  padding: 0 30px;
 }
 .featured-wrapper img{
     width: 80px;
@@ -157,4 +158,113 @@ form button:hover{
 }
 .pricing-wrapper button:hover{
     background-color: #c49e07;
+}
+
+/*footer*/
+
+#footer{
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 120px;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+    background-color: #dddddd;
+    padding:20px;
+}
+#footer ul {
+    width: 30%;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+#footer ul li{
+    text-align: right;
+    align-self: flex-end;
+}
+#footer ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+#footer p{
+    color: rgb(66, 65, 65);
+    font-size: 14px;
+}
+
+/*responsive*/
+
+
+@media (max-width:768px) {
+    #header{
+        flex-direction: column;
+    }
+    #header-img{
+        width: 60%;
+        margin-top: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        padding:5px 0;
+    }
+    #pricing{
+    width: 100%;
+    flex-direction: column;
+}
+#pricing .pricing-wrapper{
+    width: 80%;
+    margin: 10px 0;
+}
+#footer ul{
+   width: 100%;
+}
+}
+@media (max-width:590px) {
+    #how-it-works{
+        padding: 0 20px;
+    }
+    #how-it-works iframe{
+        width: 450px !important;
+    }
+    #footer{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width:490px) {
+.title{
+  padding-left: 30px;
+}
+.title h1{
+    font-size: 18px;
+}
+form input{
+    width: 250px;
+}
+.featured-wrapper img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+.featured-description h2{
+    font-size: 18px;
+}
+.featured-description p{
+    font-size: 14px;
+}
+#pricing .pricing-wrapper{
+    width: 250px;
+}
 }
