@@ -66,7 +66,7 @@ form input{
 form input::placeholder{
     font-size: 16px;
 }
-form button{
+form a{
     margin: 20px 0;
     outline: none;
     border: none;
@@ -76,8 +76,10 @@ form button{
     background-color: #f1c40f;
     cursor: pointer;
     transition: all 1s ease;
+    text-decoration: none;
+    color: #000;
 }
-form button:hover{
+form a:hover{
     background-color: #c49e07;
 }
 
